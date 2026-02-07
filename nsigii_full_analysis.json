@@ -1,9 +1,59 @@
 {
   "system": "NSIGII v0.7.0 Determinant Decoder",
-  "timestamp": "2026-02-07T14:55:46.306634",
+  "timestamp": "2026-02-07T15:24:08.312144",
   "analyses": [
     {
-      "timestamp": "2026-02-07T14:53:39.511722",
+      "timestamp": "2026-02-07T15:23:37.425339",
+      "determinant_analysis": {
+        "determinant": -8.583550953320184,
+        "magnitude": 8.583550953320184,
+        "sign": "negative",
+        "eigenvalues": [
+          -2.384837381156447,
+          1.1000000000000008,
+          3.2720168683359336
+        ],
+        "trace": 1.987179487179487,
+        "condition_number": 2.974560789396304,
+        "is_singular": false,
+        "volume_scaling": 8.583550953320184,
+        "orientation": "reversed",
+        "stability": {
+          "all_real": true,
+          "all_positive": false,
+          "max_eigenvalue": 3.2720168683359336,
+          "spectral_radius": 3.2720168683359336,
+          "dominant_mode": "unstable"
+        }
+      },
+      "biorder_bichaos_extraction": {
+        "biorder_score": 0.19925302171267587,
+        "bichaos_score": 0.0,
+        "symmetry_measure": 0.0,
+        "diagonal_dominance": 0.19925302171267587,
+        "interpretation": "HIGHLY ORDERED: System dominated by structured, predictable dynamics"
+      },
+      "ambiguity_analysis": {
+        "unresolved_channels": 2,
+        "total_channels": 3,
+        "ambiguity_ratio": 0.6666666666666666,
+        "semantic_load": "HIGH: Multiple conflicting interpretations",
+        "computational_cost": 4,
+        "interpretation_space": "Quaternary interpretation space (4 meanings)"
+      },
+      "state_reconstruction": {
+        "state_classification": "INVERTED_ORDERED",
+        "description": "Negative determinant with order dominance - ordered polarity reversal",
+        "volume_scaling": 8.583550953320184,
+        "polarity": "reversed",
+        "biorder_dominance": true,
+        "order_chaos_ratio": 2.351562499283508,
+        "stability_estimate": "unstable"
+      },
+      "summary": "NSIGII SYSTEM STATE SUMMARY\n===========================\n\nDeterminant: -8.5836 (negative)\nState: INVERTED_ORDERED\nNegative determinant with order dominance - ordered polarity reversal\n\nBiOrder Score: 0.1993\nBiChaos Score: 0.0000\nBalance: HIGHLY ORDERED: System dominated by structured, predictable dynamics\n\nAmbiguity: 2/3 channels unresolved\nSemantic Load: HIGH: Multiple conflicting interpretations\nInterpretation Space: Quaternary interpretation space (4 meanings)\n\nVolume Scaling: 8.5836x\nOrientation: REVERSED\nStability: UNSTABLE"
+    },
+    {
+      "timestamp": "2026-02-07T15:23:37.455116",
       "determinant_analysis": {
         "determinant": 0.21644904667981582,
         "magnitude": 0.21644904667981582,
@@ -53,114 +103,64 @@
       "summary": "NSIGII SYSTEM STATE SUMMARY\n===========================\n\nDeterminant: 0.2164 (positive)\nState: STABLE_ORDERED\nPositive determinant with order dominance - stable configuration\n\nBiOrder Score: 0.8011\nBiChaos Score: 0.0000\nBalance: HIGHLY ORDERED: System dominated by structured, predictable dynamics\n\nAmbiguity: 0/3 channels unresolved\nSemantic Load: CLEAR: All channels resolved, no ambiguity\nInterpretation Space: Single deterministic interpretation\n\nVolume Scaling: 0.2164x\nOrientation: PRESERVED\nStability: STABLE"
     },
     {
-      "timestamp": "2026-02-07T14:53:39.512376",
+      "timestamp": "2026-02-07T15:23:37.456586",
       "determinant_analysis": {
-        "determinant": -19.583550953320184,
-        "magnitude": 19.583550953320184,
-        "sign": "negative",
+        "determinant": 0.053903937468040036,
+        "magnitude": 0.053903937468040036,
+        "sign": "positive",
         "eigenvalues": [
-          -3.7990509435295383,
           1.0999999999999999,
-          4.686230430709028
-        ],
-        "trace": 1.987179487179487,
-        "condition_number": 4.260209482462751,
-        "is_singular": false,
-        "volume_scaling": 19.583550953320184,
-        "orientation": "reversed",
-        "stability": {
-          "all_real": true,
-          "all_positive": false,
-          "max_eigenvalue": 4.686230430709028,
-          "spectral_radius": 4.686230430709028,
-          "dominant_mode": "unstable"
-        }
-      },
-      "biorder_bichaos_extraction": {
-        "biorder_score": 0.1484424416009442,
-        "bichaos_score": 0.0,
-        "symmetry_measure": 0.0,
-        "diagonal_dominance": 0.1484424416009442,
-        "interpretation": "HIGHLY ORDERED: System dominated by structured, predictable dynamics"
-      },
-      "ambiguity_analysis": {
-        "unresolved_channels": 3,
-        "total_channels": 3,
-        "ambiguity_ratio": 1.0,
-        "semantic_load": "MAXIMAL: Complete semantic uncertainty",
-        "computational_cost": 8,
-        "interpretation_space": "2^3 = 8 possible interpretations"
-      },
-      "state_reconstruction": {
-        "state_classification": "INVERTED_ORDERED",
-        "description": "Negative determinant with order dominance - ordered polarity reversal",
-        "volume_scaling": 19.583550953320184,
-        "polarity": "reversed",
-        "biorder_dominance": true,
-        "order_chaos_ratio": 2.351562499283508,
-        "stability_estimate": "unstable"
-      },
-      "summary": "NSIGII SYSTEM STATE SUMMARY\n===========================\n\nDeterminant: -19.5836 (negative)\nState: INVERTED_ORDERED\nNegative determinant with order dominance - ordered polarity reversal\n\nBiOrder Score: 0.1484\nBiChaos Score: 0.0000\nBalance: HIGHLY ORDERED: System dominated by structured, predictable dynamics\n\nAmbiguity: 3/3 channels unresolved\nSemantic Load: MAXIMAL: Complete semantic uncertainty\nInterpretation Space: 2^3 = 8 possible interpretations\n\nVolume Scaling: 19.5836x\nOrientation: REVERSED\nStability: UNSTABLE"
-    },
-    {
-      "timestamp": "2026-02-07T14:53:39.512701",
-      "determinant_analysis": {
-        "determinant": -8.746096062531958,
-        "magnitude": 8.746096062531958,
-        "sign": "negative",
-        "eigenvalues": [
-          -2.60705960337867,
-          1.0999999999999996,
-          3.049794646113711
+          0.22136752136752125,
+          0.22136752136752136
         ],
         "trace": 1.5427350427350426,
-        "condition_number": 2.772540587376102,
+        "condition_number": 4.969111969111969,
         "is_singular": false,
-        "volume_scaling": 8.746096062531958,
-        "orientation": "reversed",
+        "volume_scaling": 0.053903937468040036,
+        "orientation": "preserved",
         "stability": {
           "all_real": true,
-          "all_positive": false,
-          "max_eigenvalue": 3.049794646113711,
-          "spectral_radius": 3.049794646113711,
+          "all_positive": true,
+          "max_eigenvalue": 1.0999999999999999,
+          "spectral_radius": 1.0999999999999999,
           "dominant_mode": "unstable"
         }
       },
       "biorder_bichaos_extraction": {
-        "biorder_score": 0.15956245089085092,
+        "biorder_score": 0.7337477337477337,
         "bichaos_score": 0.0,
         "symmetry_measure": 0.0,
-        "diagonal_dominance": 0.15956245089085092,
+        "diagonal_dominance": 0.7337477337477337,
         "interpretation": "HIGHLY ORDERED: System dominated by structured, predictable dynamics"
       },
       "ambiguity_analysis": {
-        "unresolved_channels": 2,
+        "unresolved_channels": 0,
         "total_channels": 3,
-        "ambiguity_ratio": 0.6666666666666666,
-        "semantic_load": "HIGH: Multiple conflicting interpretations",
-        "computational_cost": 4,
-        "interpretation_space": "Quaternary interpretation space (4 meanings)"
+        "ambiguity_ratio": 0.0,
+        "semantic_load": "CLEAR: All channels resolved, no ambiguity",
+        "computational_cost": 1,
+        "interpretation_space": "Single deterministic interpretation"
       },
       "state_reconstruction": {
-        "state_classification": "INVERTED_ORDERED",
-        "description": "Negative determinant with order dominance - ordered polarity reversal",
-        "volume_scaling": 8.746096062531958,
-        "polarity": "reversed",
+        "state_classification": "STABLE_ORDERED",
+        "description": "Positive determinant with order dominance - stable configuration",
+        "volume_scaling": 0.053903937468040036,
+        "polarity": "same",
         "biorder_dominance": true,
         "order_chaos_ratio": 1.503891050241332,
-        "stability_estimate": "unstable"
+        "stability_estimate": "stable"
       },
-      "summary": "NSIGII SYSTEM STATE SUMMARY\n===========================\n\nDeterminant: -8.7461 (negative)\nState: INVERTED_ORDERED\nNegative determinant with order dominance - ordered polarity reversal\n\nBiOrder Score: 0.1596\nBiChaos Score: 0.0000\nBalance: HIGHLY ORDERED: System dominated by structured, predictable dynamics\n\nAmbiguity: 2/3 channels unresolved\nSemantic Load: HIGH: Multiple conflicting interpretations\nInterpretation Space: Quaternary interpretation space (4 meanings)\n\nVolume Scaling: 8.7461x\nOrientation: REVERSED\nStability: UNSTABLE"
+      "summary": "NSIGII SYSTEM STATE SUMMARY\n===========================\n\nDeterminant: 0.0539 (positive)\nState: STABLE_ORDERED\nPositive determinant with order dominance - stable configuration\n\nBiOrder Score: 0.7337\nBiChaos Score: 0.0000\nBalance: HIGHLY ORDERED: System dominated by structured, predictable dynamics\n\nAmbiguity: 0/3 channels unresolved\nSemantic Load: CLEAR: All channels resolved, no ambiguity\nInterpretation Space: Single deterministic interpretation\n\nVolume Scaling: 0.0539x\nOrientation: PRESERVED\nStability: STABLE"
     },
     {
-      "timestamp": "2026-02-07T14:53:39.514309",
+      "timestamp": "2026-02-07T15:23:37.456586",
       "determinant_analysis": {
         "determinant": -8.786627876397109,
         "magnitude": 8.786627876397109,
         "sign": "negative",
         "eigenvalues": [
           -2.718170714489781,
-          1.1,
+          1.1000000000000008,
           2.9386835350026
         ],
         "trace": 1.3205128205128203,
@@ -203,70 +203,20 @@
       "summary": "NSIGII SYSTEM STATE SUMMARY\n===========================\n\nDeterminant: -8.7866 (negative)\nState: INVERTED_ORDERED\nNegative determinant with order dominance - ordered polarity reversal\n\nBiOrder Score: 0.1391\nBiChaos Score: 0.0000\nBalance: HIGHLY ORDERED: System dominated by structured, predictable dynamics\n\nAmbiguity: 2/3 channels unresolved\nSemantic Load: HIGH: Multiple conflicting interpretations\nInterpretation Space: Quaternary interpretation space (4 meanings)\n\nVolume Scaling: 8.7866x\nOrientation: REVERSED\nStability: UNSTABLE"
     },
     {
-      "timestamp": "2026-02-07T14:53:39.515086",
+      "timestamp": "2026-02-07T15:23:37.457594",
       "determinant_analysis": {
-        "determinant": 0.012561691869384167,
-        "magnitude": 0.012561691869384167,
-        "sign": "positive",
-        "eigenvalues": [
-          1.0333333333333332,
-          0.11025641025641025,
-          0.11025641025641025
-        ],
-        "trace": 1.2538461538461538,
-        "condition_number": 9.372093023255816,
-        "is_singular": false,
-        "volume_scaling": 0.012561691869384167,
-        "orientation": "preserved",
-        "stability": {
-          "all_real": true,
-          "all_positive": true,
-          "max_eigenvalue": 1.0333333333333332,
-          "spectral_radius": 1.0333333333333332,
-          "dominant_mode": "unstable"
-        }
-      },
-      "biorder_bichaos_extraction": {
-        "biorder_score": 0.7022332506203474,
-        "bichaos_score": 0.0,
-        "symmetry_measure": 0.0,
-        "diagonal_dominance": 0.7022332506203474,
-        "interpretation": "HIGHLY ORDERED: System dominated by structured, predictable dynamics"
-      },
-      "ambiguity_analysis": {
-        "unresolved_channels": 0,
-        "total_channels": 3,
-        "ambiguity_ratio": 0.0,
-        "semantic_load": "CLEAR: All channels resolved, no ambiguity",
-        "computational_cost": 1,
-        "interpretation_space": "Single deterministic interpretation"
-      },
-      "state_reconstruction": {
-        "state_classification": "STABLE_ORDERED",
-        "description": "Positive determinant with order dominance - stable configuration",
-        "volume_scaling": 0.012561691869384167,
-        "polarity": "same",
-        "biorder_dominance": true,
-        "order_chaos_ratio": 1.238888888620463,
-        "stability_estimate": "stable"
-      },
-      "summary": "NSIGII SYSTEM STATE SUMMARY\n===========================\n\nDeterminant: 0.0126 (positive)\nState: STABLE_ORDERED\nPositive determinant with order dominance - stable configuration\n\nBiOrder Score: 0.7022\nBiChaos Score: 0.0000\nBalance: HIGHLY ORDERED: System dominated by structured, predictable dynamics\n\nAmbiguity: 0/3 channels unresolved\nSemantic Load: CLEAR: All channels resolved, no ambiguity\nInterpretation Space: Single deterministic interpretation\n\nVolume Scaling: 0.0126x\nOrientation: PRESERVED\nStability: STABLE"
-    },
-    {
-      "timestamp": "2026-02-07T14:53:39.515410",
-      "determinant_analysis": {
-        "determinant": -1.9657563737307326,
-        "magnitude": 1.9657563737307326,
+        "determinant": -2.054104974797282,
+        "magnitude": 2.054104974797282,
         "sign": "negative",
         "eigenvalues": [
-          -1.3039571521166864,
-          0.9888888888888894,
+          -1.3039571521166837,
+          1.0333333333333332,
           1.5244699726295052
         ],
-        "trace": 1.209401709401709,
-        "condition_number": 1.5415988487264667,
+        "trace": 1.2538461538461538,
+        "condition_number": 1.4752935218995211,
         "is_singular": false,
-        "volume_scaling": 1.9657563737307326,
+        "volume_scaling": 2.054104974797282,
         "orientation": "reversed",
         "stability": {
           "all_real": true,
@@ -277,10 +227,10 @@
         }
       },
       "biorder_bichaos_extraction": {
-        "biorder_score": 0.2016302538238228,
+        "biorder_score": 0.20488968633501828,
         "bichaos_score": 0.0,
         "symmetry_measure": 0.0,
-        "diagonal_dominance": 0.2016302538238228,
+        "diagonal_dominance": 0.20488968633501828,
         "interpretation": "HIGHLY ORDERED: System dominated by structured, predictable dynamics"
       },
       "ambiguity_analysis": {
@@ -294,66 +244,116 @@
       "state_reconstruction": {
         "state_classification": "INVERTED_ORDERED",
         "description": "Negative determinant with order dominance - ordered polarity reversal",
-        "volume_scaling": 1.9657563737307326,
+        "volume_scaling": 2.054104974797282,
+        "polarity": "reversed",
+        "biorder_dominance": true,
+        "order_chaos_ratio": 1.238888888620463,
+        "stability_estimate": "unstable"
+      },
+      "summary": "NSIGII SYSTEM STATE SUMMARY\n===========================\n\nDeterminant: -2.0541 (negative)\nState: INVERTED_ORDERED\nNegative determinant with order dominance - ordered polarity reversal\n\nBiOrder Score: 0.2049\nBiChaos Score: 0.0000\nBalance: HIGHLY ORDERED: System dominated by structured, predictable dynamics\n\nAmbiguity: 1/3 channels unresolved\nSemantic Load: LOW: Single unresolved interpretation path\nInterpretation Space: Binary interpretation space (2 meanings)\n\nVolume Scaling: 2.0541x\nOrientation: REVERSED\nStability: UNSTABLE"
+    },
+    {
+      "timestamp": "2026-02-07T15:23:37.457594",
+      "determinant_analysis": {
+        "determinant": -7.899089707064068,
+        "magnitude": 7.899089707064068,
+        "sign": "negative",
+        "eigenvalues": [
+          -2.7181707144897773,
+          0.9888888888888889,
+          2.938683535002601
+        ],
+        "trace": 1.209401709401709,
+        "condition_number": 2.971702451126225,
+        "is_singular": false,
+        "volume_scaling": 7.899089707064068,
+        "orientation": "reversed",
+        "stability": {
+          "all_real": true,
+          "all_positive": false,
+          "max_eigenvalue": 2.938683535002601,
+          "spectral_radius": 2.938683535002601,
+          "dominant_mode": "unstable"
+        }
+      },
+      "biorder_bichaos_extraction": {
+        "biorder_score": 0.13152282802126147,
+        "bichaos_score": 0.0,
+        "symmetry_measure": 0.0,
+        "diagonal_dominance": 0.13152282802126147,
+        "interpretation": "HIGHLY ORDERED: System dominated by structured, predictable dynamics"
+      },
+      "ambiguity_analysis": {
+        "unresolved_channels": 2,
+        "total_channels": 3,
+        "ambiguity_ratio": 0.6666666666666666,
+        "semantic_load": "HIGH: Multiple conflicting interpretations",
+        "computational_cost": 4,
+        "interpretation_space": "Quaternary interpretation space (4 meanings)"
+      },
+      "state_reconstruction": {
+        "state_classification": "INVERTED_ORDERED",
+        "description": "Negative determinant with order dominance - ordered polarity reversal",
+        "volume_scaling": 7.899089707064068,
         "polarity": "reversed",
         "biorder_dominance": true,
         "order_chaos_ratio": 1.2509727623611597,
         "stability_estimate": "unstable"
       },
-      "summary": "NSIGII SYSTEM STATE SUMMARY\n===========================\n\nDeterminant: -1.9658 (negative)\nState: INVERTED_ORDERED\nNegative determinant with order dominance - ordered polarity reversal\n\nBiOrder Score: 0.2016\nBiChaos Score: 0.0000\nBalance: HIGHLY ORDERED: System dominated by structured, predictable dynamics\n\nAmbiguity: 1/3 channels unresolved\nSemantic Load: LOW: Single unresolved interpretation path\nInterpretation Space: Binary interpretation space (2 meanings)\n\nVolume Scaling: 1.9658x\nOrientation: REVERSED\nStability: UNSTABLE"
+      "summary": "NSIGII SYSTEM STATE SUMMARY\n===========================\n\nDeterminant: -7.8991 (negative)\nState: INVERTED_ORDERED\nNegative determinant with order dominance - ordered polarity reversal\n\nBiOrder Score: 0.1315\nBiChaos Score: 0.0000\nBalance: HIGHLY ORDERED: System dominated by structured, predictable dynamics\n\nAmbiguity: 2/3 channels unresolved\nSemantic Load: HIGH: Multiple conflicting interpretations\nInterpretation Space: Quaternary interpretation space (4 meanings)\n\nVolume Scaling: 7.8991x\nOrientation: REVERSED\nStability: UNSTABLE"
     },
     {
-      "timestamp": "2026-02-07T14:53:39.515670",
+      "timestamp": "2026-02-07T15:23:37.457594",
       "determinant_analysis": {
-        "determinant": -1.984480460466332,
-        "magnitude": 1.984480460466332,
+        "determinant": -18.060670936656802,
+        "magnitude": 18.060670936656802,
         "sign": "negative",
         "eigenvalues": [
-          -1.2563381044976374,
-          1.004761904761905,
-          1.5720890202485531
+          -4.084765229243827,
+          1.0047619047619045,
+          4.400516144994744
         ],
         "trace": 1.3205128205128207,
-        "condition_number": 1.5646383613848154,
+        "condition_number": 4.379660618241213,
         "is_singular": false,
-        "volume_scaling": 1.984480460466332,
+        "volume_scaling": 18.060670936656802,
         "orientation": "reversed",
         "stability": {
           "all_real": true,
           "all_positive": false,
-          "max_eigenvalue": 1.5720890202485531,
-          "spectral_radius": 1.5720890202485531,
+          "max_eigenvalue": 4.400516144994744,
+          "spectral_radius": 4.400516144994744,
           "dominant_mode": "unstable"
         }
       },
       "biorder_bichaos_extraction": {
-        "biorder_score": 0.21770010934891057,
+        "biorder_score": 0.10531723473747802,
         "bichaos_score": 0.0,
         "symmetry_measure": 0.0,
-        "diagonal_dominance": 0.21770010934891057,
+        "diagonal_dominance": 0.10531723473747802,
         "interpretation": "HIGHLY ORDERED: System dominated by structured, predictable dynamics"
       },
       "ambiguity_analysis": {
-        "unresolved_channels": 1,
+        "unresolved_channels": 3,
         "total_channels": 3,
-        "ambiguity_ratio": 0.3333333333333333,
-        "semantic_load": "LOW: Single unresolved interpretation path",
-        "computational_cost": 2,
-        "interpretation_space": "Binary interpretation space (2 meanings)"
+        "ambiguity_ratio": 1.0,
+        "semantic_load": "MAXIMAL: Complete semantic uncertainty",
+        "computational_cost": 8,
+        "interpretation_space": "2^3 = 8 possible interpretations"
       },
       "state_reconstruction": {
         "state_classification": "INVERTED_ORDERED",
         "description": "Negative determinant with order dominance - ordered polarity reversal",
-        "volume_scaling": 1.984480460466332,
+        "volume_scaling": 18.060670936656802,
         "polarity": "reversed",
         "biorder_dominance": true,
         "order_chaos_ratio": 1.3728373699180065,
         "stability_estimate": "unstable"
       },
-      "summary": "NSIGII SYSTEM STATE SUMMARY\n===========================\n\nDeterminant: -1.9845 (negative)\nState: INVERTED_ORDERED\nNegative determinant with order dominance - ordered polarity reversal\n\nBiOrder Score: 0.2177\nBiChaos Score: 0.0000\nBalance: HIGHLY ORDERED: System dominated by structured, predictable dynamics\n\nAmbiguity: 1/3 channels unresolved\nSemantic Load: LOW: Single unresolved interpretation path\nInterpretation Space: Binary interpretation space (2 meanings)\n\nVolume Scaling: 1.9845x\nOrientation: REVERSED\nStability: UNSTABLE"
+      "summary": "NSIGII SYSTEM STATE SUMMARY\n===========================\n\nDeterminant: -18.0607 (negative)\nState: INVERTED_ORDERED\nNegative determinant with order dominance - ordered polarity reversal\n\nBiOrder Score: 0.1053\nBiChaos Score: 0.0000\nBalance: HIGHLY ORDERED: System dominated by structured, predictable dynamics\n\nAmbiguity: 3/3 channels unresolved\nSemantic Load: MAXIMAL: Complete semantic uncertainty\nInterpretation Space: 2^3 = 8 possible interpretations\n\nVolume Scaling: 18.0607x\nOrientation: REVERSED\nStability: UNSTABLE"
     },
     {
-      "timestamp": "2026-02-07T14:53:39.515892",
+      "timestamp": "2026-02-07T15:23:37.459201",
       "determinant_analysis": {
         "determinant": -8.095231728029805,
         "magnitude": 8.095231728029805,
@@ -361,7 +361,7 @@
         "eigenvalues": [
           -2.6348373811564456,
           1.0166666666666664,
-          3.022016868335933
+          3.0220168683359327
         ],
         "trace": 1.4038461538461537,
         "condition_number": 2.972475608199279,
@@ -371,8 +371,8 @@
         "stability": {
           "all_real": true,
           "all_positive": false,
-          "max_eigenvalue": 3.022016868335933,
-          "spectral_radius": 3.022016868335933,
+          "max_eigenvalue": 3.0220168683359327,
+          "spectral_radius": 3.0220168683359327,
           "dominant_mode": "unstable"
         }
       },
@@ -403,14 +403,14 @@
       "summary": "NSIGII SYSTEM STATE SUMMARY\n===========================\n\nDeterminant: -8.0952 (negative)\nState: INVERTED_ORDERED\nNegative determinant with order dominance - ordered polarity reversal\n\nBiOrder Score: 0.1491\nBiChaos Score: 0.0000\nBalance: HIGHLY ORDERED: System dominated by structured, predictable dynamics\n\nAmbiguity: 2/3 channels unresolved\nSemantic Load: HIGH: Multiple conflicting interpretations\nInterpretation Space: Quaternary interpretation space (4 meanings)\n\nVolume Scaling: 8.0952x\nOrientation: REVERSED\nStability: UNSTABLE"
     },
     {
-      "timestamp": "2026-02-07T14:53:39.516114",
+      "timestamp": "2026-02-07T15:23:37.459201",
       "determinant_analysis": {
         "determinant": -8.185149575505491,
         "magnitude": 8.185149575505491,
         "sign": "negative",
         "eigenvalues": [
           -2.681133677452743,
-          1.0259259259259255,
+          1.025925925925925,
           2.9757205720396374
         ],
         "trace": 1.3205128205128205,
@@ -453,18 +453,18 @@
       "summary": "NSIGII SYSTEM STATE SUMMARY\n===========================\n\nDeterminant: -8.1851 (negative)\nState: INVERTED_ORDERED\nNegative determinant with order dominance - ordered polarity reversal\n\nBiOrder Score: 0.1411\nBiChaos Score: 0.0000\nBalance: HIGHLY ORDERED: System dominated by structured, predictable dynamics\n\nAmbiguity: 2/3 channels unresolved\nSemantic Load: HIGH: Multiple conflicting interpretations\nInterpretation Space: Quaternary interpretation space (4 meanings)\n\nVolume Scaling: 8.1851x\nOrientation: REVERSED\nStability: UNSTABLE"
     },
     {
-      "timestamp": "2026-02-07T14:53:39.516337",
+      "timestamp": "2026-02-07T15:23:37.459201",
       "determinant_analysis": {
         "determinant": -8.254104974797281,
         "magnitude": 8.254104974797281,
         "sign": "negative",
         "eigenvalues": [
           -2.718170714489778,
-          1.0333333333333339,
+          1.0333333333333337,
           2.9386835350026006
         ],
         "trace": 1.2538461538461538,
-        "condition_number": 2.8438872919380005,
+        "condition_number": 2.843887291937999,
         "is_singular": false,
         "volume_scaling": 8.254104974797281,
         "orientation": "reversed",
